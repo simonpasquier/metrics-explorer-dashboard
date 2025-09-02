@@ -15,3 +15,17 @@ Grafana dashboard to explore Prometheus metrics.
 The dashboard leverages the `/api/v1/status/tsdb`, `/api/v1/series`, `/api/v1/labels` and `/api/v1/label/:label/values` [API endpoints](https://prometheus.io/docs/prometheus/latest/querying/api/). While the requests should be less expensive than using PromQL expressions such as `count by(__name__) ({__name__=~".+"})`, use it with care on environments with lots of metrics.
 
 The dashboard should also work with Thanos Query endpoints, albeit the panels relying on the `/api/v1/status/tsdb` API endpoint.
+
+## Screenshots
+
+### Overview
+
+![Metrics overview](/img/overview.png)
+
+### Metric details
+
+![Metric details](/img/details.png)
+
+## License
+
+This work is licensed under the Apache 2 License.
