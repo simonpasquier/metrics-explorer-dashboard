@@ -898,6 +898,12 @@
           "color": {
             "mode": "thresholds"
           },
+          "links": [
+            {
+              "title": "Filter",
+              "url": "/d/81ddd904-55b0-4c0a-8d90-5247c44b6295/metrics-explorer?${json_prometheus:queryparam}&${metric:queryparam}﻿&var-label=﻿${all_labels}&${limit:queryparam}"
+            }
+          ],
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
