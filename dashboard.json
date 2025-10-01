@@ -1,8 +1,8 @@
 {
   "__inputs": [
     {
-      "name": "DS_PROMETHEUS_V1 API",
-      "label": "prometheus v1 API",
+      "name": "DS_YESOREYERAM-INFINITY-DATASOURCE",
+      "label": "yesoreyeram-infinity-datasource",
       "description": "",
       "type": "datasource",
       "pluginId": "yesoreyeram-infinity-datasource",
@@ -16,6 +16,12 @@
       "id": "grafana",
       "name": "Grafana",
       "version": "12.1.1"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
     },
     {
       "type": "panel",
@@ -33,7 +39,7 @@
       "type": "datasource",
       "id": "yesoreyeram-infinity-datasource",
       "name": "Infinity",
-      "version": "3.4.1"
+      "version": "3.6.0"
     }
   ],
   "annotations": {
@@ -127,7 +133,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -203,7 +209,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -275,7 +281,7 @@
                 "value": [
                   {
                     "title": "Filter",
-                    "url": "d/81ddd904-55b0-4c0a-8d90-5247c44b6295/metrics-explorer?var-metric=${__data.fields.name}"
+                    "url": "d/81ddd904-55b0-4c0a-8d90-5247c44b6295/metrics-explorer?${json_prometheus:queryparam}&var-metric=${__data.fields.name}&${limit:queryparam}"
                   }
                 ]
               }
@@ -309,7 +315,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -391,7 +397,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -477,7 +483,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -554,7 +560,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -637,7 +643,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -731,7 +737,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -824,7 +830,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -901,7 +907,7 @@
           "links": [
             {
               "title": "Filter",
-              "url": "/d/81ddd904-55b0-4c0a-8d90-5247c44b6295/metrics-explorer?${json_prometheus:queryparam}&${metric:queryparam}﻿&var-label=﻿${all_labels}&${limit:queryparam}"
+              "url": "/d/81ddd904-55b0-4c0a-8d90-5247c44b6295/metrics-explorer?${json_prometheus:queryparam}&${metric:queryparam}&var-label=${all_labels}&${limit:queryparam}"
             }
           ],
           "mappings": [],
@@ -950,7 +956,7 @@
           "columns": [],
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_PROMETHEUS_V1 API}"
+            "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
           },
           "filters": [],
           "format": "table",
@@ -1052,7 +1058,7 @@
         "current": {},
         "datasource": {
           "type": "yesoreyeram-infinity-datasource",
-          "uid": "${DS_PROMETHEUS_V1 API}"
+          "uid": "${DS_YESOREYERAM-INFINITY-DATASOURCE}"
         },
         "definition": "",
         "description": "",
